@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-Bairn Landing page</title>
+    <link rel="stylesheet" href="./style.css">
+<body>
+    <div class="hero">
+        <nav>
+            <img src="./logo/techb kiit chapter logo white-01.png" class="logo" style="width: 160px;">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Members</a></li>
+            </ul>
+
+            <button type="button" onclick="toggleBtn()" id="btn"> <!-- to make btn -->
+                <span></span>
+            </button>
+        </nav>
+
+
+        <div class="lamp-container">
+            <img src="./img/lamp.png" class="lamp">
+            <img src="./img/light.png" class="light" id="light">
+        </div>
+
+        <div class="text-container">
+            <h1>TechBairn<br>Student Community</h1>
+            <p>In association with School of Electronics</p>
+        </div>
+
+
+    </div>
+
+
+    <!-- section-2 -->
+
+    <script>
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light");
+
+        function toggleBtn() {
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+        }
+    </script>
+    
+</body>
+</html>
